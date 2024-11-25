@@ -1,0 +1,66 @@
+.about-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a2442;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.about-btn {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #ffffff;
+  border: 0px;
+  background-color: #ee6e19;
+  width: 170px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+}
+
+.my-name {
+  font-family: fantasy;
+  margin-left: 4px;
+}
+
+.about-desc {
+  width: 700px;
+  font-size: 21px;
+  font-weight: 500;
+  margin: 20px 0px 60px 0px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.about-main-h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .about-div {
+    width: 100%;
+  }
+
+  .about-desc {
+    width: 280px;
+    font-size: 15px;
+  }
+
+  .about-main-h1 {
+    font-size: 20px;
+  }
+
+  .about-btn {
+    font-size: 15px;
+    width: 140px;
+    height: 35px;
+  }
+}

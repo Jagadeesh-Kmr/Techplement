@@ -1,0 +1,95 @@
+.contact-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0a2442;
+  font-family: 'Roboto';
+  color: #ffffff;
+  padding-bottom: 80px;
+  font-size: 20px;
+}
+
+.contact-h {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.person-details-bg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4e0e4;
+  padding-left: 90px;
+  width: 900px;
+  height: 280px;
+  margin-bottom: 40px;
+}
+
+.p-d-input {
+  border: 0;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border-radius: 8px;
+  color: #475569;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-btn {
+  color: rgb(78, 129, 158);
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid rgb(78, 129, 158);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main-div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-h {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .person-details-bg-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    background-color: transparent;
+  }
+
+  .contact-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .p-d-input {
+    width: 200px;
+    font-size: 15px;
+    border: 1px solid #475569;
+  }
+}
