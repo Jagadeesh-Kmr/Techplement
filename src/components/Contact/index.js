@@ -10,7 +10,8 @@ const Contact = () => {
   const [personName, setPersonName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
-  const [gender, setGender] = useState('')
+  const [msg, setMsg] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
 
   return (
     <CartContact.Consumer>
@@ -18,7 +19,15 @@ const Contact = () => {
         const {addContactData, contactData} = value
 
         const onClickPayNow = () => {
-          addContactData({personName, email, phone, gender})
+          if (
+            personName.length !== 0 &&
+            email.length !== 0 &&
+            phone.length !== 0 &&
+            msg.length !== 0
+          ) {
+            addContactData({personName, email, phone, msg})
+          }
+          setErrorMsg('*fill the details')
         }
 
         const ContactLen = contactData.length === 0
@@ -40,6 +49,7 @@ const Contact = () => {
                   onChange={e => setPhone(e.target.value)}
                 />
               </div>
+
               <div>
                 <input
                   type="text"
@@ -51,10 +61,11 @@ const Contact = () => {
                   type="text"
                   className="p-d-input"
                   placeholder="Message"
-                  onChange={e => setGender(e.target.value)}
+                  onChange={e => setMsg(e.target.value)}
                 />
               </div>
             </div>
+            <p className="error-msg">{errorMsg}</p>
           </>
         )
 

@@ -12,8 +12,9 @@
 }
 
 .contact-h {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 40px;
+  text-decoration: underline;
 }
 
 .person-details-bg-div {
@@ -57,6 +58,14 @@
   padding: 10px 25px 10px 25px;
 }
 
+.error-msg {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e73c2f;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 @media screen and (max-width: 768px) {
   .contact-main-div {
     text-align: center;
@@ -91,5 +100,9 @@
     width: 200px;
     font-size: 15px;
     border: 1px solid #475569;
+  }
+
+  .error-msg {
+    font-size: 15px;
   }
 }

@@ -16,15 +16,33 @@
 .cert-h1 {
   font-family: 'Roboto';
   color: #ffffff;
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.cert-h1-db {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 35px;
   font-weight: 500;
   margin-bottom: 0;
+  text-decoration: underline;
+  margin-top: 80px;
+}
+
+.cert-hr-line-dashed {
+  width: 1470px;
+  border: 0px;
+  border-top: 2px dashed #ffffff;
+  margin-top: 50px;
 }
 
 .cert-hr-line {
   width: 1470px;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .cert-hading-div {
@@ -32,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   width: 1460px;
+  margin-top: 40px;
 }
 
 .cert-link-element {
@@ -72,7 +91,7 @@
 @media screen and (max-width: 768px) {
   .certifications-bg-div {
     width: 100%;
-    padding: 40px 20px 100px 20px;
+    padding: 40px 20px 60px 20px;
   }
 
   .cert-h1 {
@@ -80,7 +99,12 @@
   }
 
   .cert-hr-line {
-    width: 320px;
+    width: 330px;
+    margin-bottom: 10px;
+  }
+
+  .cert-hr-line-dashed {
+    width: 330px;
     margin-bottom: 10px;
   }
 
@@ -93,6 +117,10 @@
   .cert-name {
     font-size: 13px;
     width: 100px;
+  }
+
+  .cert-h1-db {
+    font-size: 20px;
   }
 
   .key-points-ul {

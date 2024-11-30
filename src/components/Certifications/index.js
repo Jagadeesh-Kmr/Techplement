@@ -6,7 +6,7 @@ const Certifications = () => (
   <>
     <Header />
     <div className="certifications-bg-div">
-      <h1 className="cert-h1">Frontend Certifications</h1>
+      <h1 className="cert-h1">Frontend</h1>
       <hr className="cert-hr-line" />
       <div className="cert-hading-div">
         <div>
@@ -39,7 +39,7 @@ const Certifications = () => (
         </ul>
       </div>
 
-      <hr className="cert-hr-line" />
+      <hr className="cert-hr-line-dashed" />
 
       <div className="cert-hading-div">
         <div>
@@ -66,7 +66,7 @@ const Certifications = () => (
         </ul>
       </div>
 
-      <hr className="cert-hr-line" />
+      <hr className="cert-hr-line-dashed" />
 
       <div className="cert-hading-div">
         <div>
@@ -88,6 +88,35 @@ const Certifications = () => (
           <li className="key-points-li"> Fundamentals of Computer Science</li>
           <li className="key-points-li">Work with command line</li>
           <li className="key-points-li">Collaborating with Git</li>
+        </ul>
+      </div>
+
+      <h1 className="cert-h1-db">Databases</h1>
+      <hr className="cert-hr-line" />
+      <div className="cert-hading-div">
+        <div>
+          <h1 className="cert-name" style={{marginRight: '80px'}}>
+            Introduction to Databases
+          </h1>
+        </div>
+        <div>
+          <a
+            href="https://certificates.ccbp.in/intensive/introduction-to-databases?id=MJKPQROZMH"
+            target="_blank"
+            rel="noreferrer"
+            className="cert-link-element"
+          >
+            SQL (ccbp.in)
+          </a>
+        </div>
+      </div>
+      <div className="key-points-div">
+        <ul className="key-points-ul">
+          <li className="key-points-li">Querying with SQL</li>
+          <li className="key-points-li">Aggregations and Group By</li>
+          <li className="key-points-li">Modelling Database</li>
+          <li className="key-points-li">Joins</li>
+          <li className="key-points-li">Views and Subqueries</li>
         </ul>
       </div>
     </div>

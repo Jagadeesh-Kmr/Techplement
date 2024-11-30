@@ -11,12 +11,12 @@ const Header = () => (
     <nav className="nav-header">
       <div className="nav-content">
         <div className="nav-bar-mobile-logo-container">
-          <Link to="/" className="nav-link-about">
+          <Link to="/about" className="nav-link-about">
             About<span style={{color: '#ffffff'}}>ME.</span>
           </Link>
 
           <li className="nav-menu-item-mobile-home">
-            <Link to="/" className="nav-link-home">
+            <Link to="/home" className="nav-link-home">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
                 alt="nav home"
@@ -32,7 +32,7 @@ const Header = () => (
           </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">
-              <Link to="/" className="nav-link">
+              <Link to="/home" className="nav-link">
                 Home
               </Link>
             </li>

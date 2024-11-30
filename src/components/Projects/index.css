@@ -14,9 +14,10 @@
 .my-projects {
   font-family: 'Roboto';
   color: #ffffff;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
   margin-bottom: 0;
+  text-decoration: underline;
 }
 
 .projects-hr-line {
@@ -71,7 +72,7 @@
 @media screen and (max-width: 768px) {
   .projects-bg-container {
     width: 100%;
-    padding: 40px 20px 100px 20px;
+    padding: 40px 20px 60px 20px;
   }
 
   .my-projects {
@@ -79,7 +80,7 @@
   }
 
   .projects-hr-line {
-    width: 320px;
+    width: 330px;
     margin-bottom: 10px;
   }
 
