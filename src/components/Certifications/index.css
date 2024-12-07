@@ -53,9 +53,19 @@
   margin-top: 40px;
 }
 
+.cert-link-logo {
+  font-size: 30px;
+  margin-right: 8px;
+}
+
 .cert-link-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #74a8d8;
+  border-bottom: 1px solid #74a8d8;
   font-size: 20px;
-  color: #75a6e6;
 }
 
 .cert-name {
@@ -66,6 +76,10 @@
   margin-bottom: 0;
 }
 
+.contact {
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .key-points-div {
     display: flex;
@@ -73,6 +87,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .key-points-ul {
@@ -109,9 +124,10 @@
   }
 
   .cert-hading-div {
-    width: 360px;
+    width: 340px;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
   }
 
   .cert-name {
@@ -129,11 +145,15 @@
   }
 
   .cert-link-element {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .key-points-li {
     font-size: 15px;
     margin-bottom: 8px;
+  }
+
+  .cert-link-logo {
+    font-size: 24px;
   }
 }

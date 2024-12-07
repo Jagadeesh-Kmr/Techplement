@@ -150,6 +150,14 @@
   margin-left: 10px;
 }
 
+.nav-link:focus {
+  color: #ee6e19;
+}
+
+.nav-menu-item:focus {
+  color: #ee6e19;
+}
+
 .nav-link-home {
   display: flex;
   align-items: center;

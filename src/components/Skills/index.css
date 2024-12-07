@@ -6,17 +6,9 @@
   min-height: 90vh;
   background-color: #0a2442;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   font-family: 'Roboto';
   color: #ffffff;
-}
-
-.home-skills-btn-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 800px;
 }
 
 .skills-main-p {
@@ -24,7 +16,7 @@
   font-size: 30px;
   font-weight: bold;
   font-family: 'Roboto';
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .nxtwave-p {
@@ -36,18 +28,52 @@
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
+  text-decoration: underline;
 }
 
-.home-skills-btn {
-  color: #ffffff;
-  background-color: #475569;
+.skills-img-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 1180px;
   font-family: 'Roboto';
-  font-size: 16px;
-  border: none;
-  padding: 10px 16px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.skills-div {
+  margin: 40px;
+}
+
+.skills-img {
+  width: 200px;
+  height: 200px;
   border-radius: 4px;
-  outline: none;
-  cursor: pointer;
+  color: #f1f0f0;
+  border: 8px inset #74a8d8;
+  border-top: 0px;
+  padding: 20px;
+}
+
+.skills-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #74a8d8;
+}
+
+.skills-link-element {
+  text-decoration: none;
+}
+
+.skills-link-logo {
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,5 +87,22 @@
 
   .nxtwave-p {
     font-size: 18px;
+  }
+
+  .skills-img-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .skills-div {
+    margin: 25px;
+    font-size: 16px;
+  }
+
+  .skills-img {
+    width: 160px;
+    height: 160px;
   }
 }

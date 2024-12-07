@@ -38,14 +38,14 @@ const Header = () => (
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/skills" className="nav-link">
-                Skills
+              <Link to="/projects" className="nav-link">
+                Projects
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/projects" className="nav-link">
-                Projects
+              <Link to="/skills" className="nav-link">
+                Skills
               </Link>
             </li>
 
@@ -67,13 +67,13 @@ const Header = () => (
       <div className="nav-menu-mobile">
         <ul className="nav-menu-list-mobile">
           <li className="nav-menu-item-mobile">
-            <Link to="/skills" className="nav-link">
-              <GiSkills className="nav-bar-icon" />
+            <Link to="/projects" className="nav-link">
+              <FaClipboardList className="nav-bar-icon" />
             </Link>
           </li>
           <li className="nav-menu-item-mobile">
-            <Link to="/projects" className="nav-link">
-              <FaClipboardList className="nav-bar-icon" />
+            <Link to="/skills" className="nav-link">
+              <GiSkills className="nav-bar-icon" />
             </Link>
           </li>
           <li className="nav-menu-item-mobile">

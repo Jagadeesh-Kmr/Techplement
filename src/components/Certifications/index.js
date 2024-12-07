@@ -1,3 +1,6 @@
+import {Link} from 'react-router-dom'
+
+import {BsLink} from 'react-icons/bs'
 import Header from '../Header'
 
 import './index.css'
@@ -21,7 +24,7 @@ const Certifications = () => (
             rel="noreferrer"
             className="cert-link-element"
           >
-            React Js (ccbp.in)
+            <BsLink className="cert-link-logo" /> Certification
           </a>
         </div>
       </div>
@@ -47,12 +50,12 @@ const Certifications = () => (
         </div>
         <div>
           <a
-            href="https://certificates.ccbp.in/intensive/javascript-essentials?id=MWLXYJLHTM"
+            href="https://certificates.ccbp.in/intensive/react-js?id=XSKXTXKPOQ"
             target="_blank"
             rel="noreferrer"
             className="cert-link-element"
           >
-            JavaScript Essentials(ccbp.in)
+            <BsLink className="cert-link-logo" /> Certification
           </a>
         </div>
       </div>
@@ -74,12 +77,12 @@ const Certifications = () => (
         </div>
         <div>
           <a
-            href="https://certificates.ccbp.in/intensive/developer-foundations?id=MWQFCTFCES"
+            href="https://certificates.ccbp.in/intensive/react-js?id=XSKXTXKPOQ"
             target="_blank"
             rel="noreferrer"
             className="cert-link-element"
           >
-            Developer Foundations(ccbp.in)
+            <BsLink className="cert-link-logo" /> Certification
           </a>
         </div>
       </div>
@@ -101,12 +104,12 @@ const Certifications = () => (
         </div>
         <div>
           <a
-            href="https://certificates.ccbp.in/intensive/introduction-to-databases?id=MJKPQROZMH"
+            href="https://certificates.ccbp.in/intensive/react-js?id=XSKXTXKPOQ"
             target="_blank"
             rel="noreferrer"
             className="cert-link-element"
           >
-            SQL (ccbp.in)
+            <BsLink className="cert-link-logo" /> Certification
           </a>
         </div>
       </div>
@@ -118,7 +121,14 @@ const Certifications = () => (
           <li className="key-points-li">Joins</li>
           <li className="key-points-li">Views and Subqueries</li>
         </ul>
+        <hr className="cert-hr-line-dashed" />
       </div>
+
+      <Link to="/contact">
+        <button type="button" className="about-btn contact">
+          CONTACT
+        </button>
+      </Link>
     </div>
   </>
 )

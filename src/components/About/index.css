@@ -38,7 +38,7 @@
   color: #ffffff;
   border: 0px;
   background-color: #ee6e19;
-  width: 170px;
+  width: 160px;
   height: 45px;
   cursor: pointer;
   outline: none;
@@ -88,6 +88,7 @@
     width: 240px;
     margin-bottom: 20px;
     margin-top: 0px;
+    padding-top: 0px;
   }
 
   .social-media-icon-about-div {
@@ -96,12 +97,14 @@
 
   .about-me-div {
     margin: 0px;
+    padding-top: 0px;
   }
 
   .about-desc {
     width: 280px;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 10px;
   }
 
   .about-main-h1 {
@@ -111,8 +114,8 @@
 
   .about-btn {
     font-size: 15px;
-    width: 140px;
+    width: 130px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }

@@ -1,100 +1,67 @@
-import {useState} from 'react'
+import {IoMail} from 'react-icons/io5'
 
 import Header from '../Header'
-import MsgSuccess from '../MsgSuccess'
-import CartContact from '../../context/CreateContact'
 
 import './index.css'
 
 const Contact = () => {
-  const [personName, setPersonName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [msg, setMsg] = useState('')
-  const [errorMsg, setErrorMsg] = useState('')
+  const renderPersonDetails = () => (
+    <>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        className="person-details-bg-div"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="90f97961-dc3c-41ea-8613-6e37688cd4fc"
+        />
+        <div>
+          <input
+            type="text"
+            className="p-d-input"
+            placeholder="Name"
+            name="name"
+          />
+
+          <input
+            type="text"
+            name="email"
+            className="p-d-input"
+            placeholder="E-Mail"
+          />
+        </div>
+
+        <div className="msq-input-div">
+          <textarea
+            type="text"
+            name="message"
+            className="p-d-input msg"
+            placeholder="Message...."
+          />
+        </div>
+        <div className="contact-btn-div">
+          <button type="submit" className="contact-btn">
+            Contact
+          </button>
+        </div>
+      </form>
+    </>
+  )
 
   return (
-    <CartContact.Consumer>
-      {value => {
-        const {addContactData, contactData} = value
-
-        const onClickPayNow = () => {
-          if (
-            personName.length !== 0 &&
-            email.length !== 0 &&
-            phone.length !== 0 &&
-            msg.length !== 0
-          ) {
-            addContactData({personName, email, phone, msg})
-          }
-          setErrorMsg('*fill the details')
-        }
-
-        const ContactLen = contactData.length === 0
-
-        const renderPersonDetails = () => (
-          <>
-            <div className="person-details-bg-div">
-              <div>
-                <input
-                  type="text"
-                  className="p-d-input"
-                  placeholder="Name"
-                  onChange={e => setPersonName(e.target.value)}
-                />
-                <input
-                  type="text"
-                  className="p-d-input"
-                  placeholder="Phone Number"
-                  onChange={e => setPhone(e.target.value)}
-                />
-              </div>
-
-              <div>
-                <input
-                  type="text"
-                  className="p-d-input"
-                  placeholder="E-Mail"
-                  onChange={e => setEmail(e.target.value)}
-                />
-                <input
-                  type="text"
-                  className="p-d-input"
-                  placeholder="Message"
-                  onChange={e => setMsg(e.target.value)}
-                />
-              </div>
-            </div>
-            <p className="error-msg">{errorMsg}</p>
-          </>
-        )
-
-        return (
-          <>
-            <Header />
-            <div className="contact-main-div">
-              {ContactLen ? (
-                <>
-                  <h1 className="contact-h">Contact Form</h1>
-                  {renderPersonDetails()}
-                  <div className="contact-btn-div">
-                    <button
-                      type="button"
-                      className="contact-btn"
-                      onClick={onClickPayNow}
-                    >
-                      Contact
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <MsgSuccess />
-              )}
-            </div>
-          </>
-        )
-      }}
-    </CartContact.Consumer>
+    <>
+      <Header />
+      <div className="contact-main-div">
+        <>
+          <h1 className="contact-h">
+            <IoMail className="mail-logo" /> Get In Touch
+          </h1>
+          {renderPersonDetails()}
+        </>
+      </div>
+    </>
   )
 }
 

@@ -8,23 +8,32 @@
   font-family: 'Roboto';
   color: #ffffff;
   padding-bottom: 80px;
+  padding-top: 80px;
   font-size: 20px;
 }
 
 .contact-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 0px;
   text-decoration: underline;
+}
+
+.mail-logo {
+  margin-right: 10px;
 }
 
 .person-details-bg-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #d4e0e4;
-  padding-left: 90px;
-  width: 900px;
-  height: 280px;
+  width: 800px;
+  padding: 70px 0px 40px 0px;
   margin-bottom: 40px;
 }
 
@@ -38,6 +47,19 @@
   padding: 16px;
   margin-bottom: 20px;
   font-size: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.msq-input-div {
+  display: flex;
+  align-items: flex-start;
+  width: 680px;
+}
+
+.msg {
+  width: 670px;
+  height: 250px;
 }
 
 .contact-btn-div {
@@ -48,14 +70,17 @@
 }
 
 .contact-btn {
-  color: rgb(78, 129, 158);
+  color: #0a2442;
   background-color: transparent;
   font-size: 20px;
-  border: 1px solid rgb(78, 129, 158);
-  border-radius: 4px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #0a2442;
+  border-radius: 8px;
   cursor: pointer;
   outline: none;
   padding: 10px 25px 10px 25px;
+  margin-top: 10px;
 }
 
 .error-msg {
@@ -94,15 +119,26 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 0px;
   }
 
   .p-d-input {
-    width: 200px;
+    width: 240px;
     font-size: 15px;
     border: 1px solid #475569;
   }
 
-  .error-msg {
-    font-size: 15px;
+  .msq-input-div {
+    width: 280px;
+  }
+  .msg {
+    width: 240px;
+    height: 200px;
+  }
+  .contact-btn {
+    font-size: 18px;
+    margin-top: 10px;
+    border-color: #ffffff;
+    color: #ffffff;
   }
 }
