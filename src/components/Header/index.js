@@ -1,95 +1,79 @@
-import {Link, withRouter} from 'react-router-dom'
+import {useState} from 'react'
 
-import {GiSkills} from 'react-icons/gi'
-import {RiBookmark3Line} from 'react-icons/ri'
-import {FaClipboardList, FaPhoneAlt} from 'react-icons/fa'
+import {Link, withRouter} from 'react-router-dom'
+import {IoMdMenu} from 'react-icons/io'
 
 import './index.css'
 
-const Header = () => (
-  <>
-    <nav className="nav-header">
-      <div className="nav-content">
-        <div className="nav-bar-mobile-logo-container">
-          <Link to="/about" className="nav-link-about">
-            About<span style={{color: '#ffffff'}}>ME.</span>
-          </Link>
+const Header = () => {
+  const [toggleNav, setToggleNav] = useState(false)
 
-          <li className="nav-menu-item-mobile-home">
-            <Link to="/home" className="nav-link-home">
-              <img
-                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
-                alt="nav home"
-                className="nav-bar-home-img"
-              />
+  const onClickNavMenu = () => {
+    setToggleNav(!toggleNav)
+  }
+
+  const navMbMenu = toggleNav
+    ? 'nav-menu-list-mobile-dis'
+    : 'nav-menu-list-mobile'
+
+  return (
+    <>
+      <nav className="nav-header">
+        <div className="nav-content">
+          <div className="nav-bar-mobile-logo-container">
+            <Link to="/" className="nav-link-about">
+              Learn<span style={{color: '#0f1635'}}>TECH</span>
             </Link>
-          </li>
+
+            <button
+              className="navbar-mobile-menu-btn"
+              type="button"
+              onClick={onClickNavMenu}
+            >
+              <IoMdMenu className="nav-bar-home-menu" />
+            </button>
+          </div>
+
+          <div className="nav-bar-large-container">
+            <Link to="/" className="nav-link-about">
+              Learn<span style={{color: '#0f1635'}}>TECH</span>
+            </Link>
+            <ul className="nav-menu">
+              <li className="nav-menu-item">
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+
+              <li className="nav-menu-item">
+                <Link to="/courses" className="nav-link">
+                  Courses
+                </Link>
+              </li>
+
+              <li className="nav-menu-item">
+                <Link to="/contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="nav-bar-large-container">
-          <Link to="/about" className="nav-link-about">
-            About<span style={{color: '#ffffff'}}>ME.</span>
+        <div className={navMbMenu}>
+          <Link to="/" className="nav-link mb">
+            Home
           </Link>
-          <ul className="nav-menu">
-            <li className="nav-menu-item">
-              <Link to="/home" className="nav-link">
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <Link to="/projects" className="nav-link">
-                Projects
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <Link to="/skills" className="nav-link">
-                Skills
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <Link to="/certifications" className="nav-link">
-                Certifications
-              </Link>
-            </li>
-
-            <li className="nav-menu-item">
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <Link to="/courses" className="nav-link mb">
+            Courses
+          </Link>
+          <Link to="/contact" className="nav-link mb">
+            Contact
+          </Link>
         </div>
-      </div>
-
-      <div className="nav-menu-mobile">
-        <ul className="nav-menu-list-mobile">
-          <li className="nav-menu-item-mobile">
-            <Link to="/projects" className="nav-link">
-              <FaClipboardList className="nav-bar-icon" />
-            </Link>
-          </li>
-          <li className="nav-menu-item-mobile">
-            <Link to="/skills" className="nav-link">
-              <GiSkills className="nav-bar-icon" />
-            </Link>
-          </li>
-          <li className="nav-menu-item-mobile">
-            <Link to="/certifications" className="nav-link">
-              <RiBookmark3Line className="nav-bar-icon" />
-            </Link>
-          </li>
-          <li className="nav-menu-item-mobile">
-            <Link to="/contact" className="nav-link">
-              <FaPhoneAlt className="nav-bar-icon" />
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </>
-)
+      </nav>
+    </>
+  )
+}
 
 export default withRouter(Header)
