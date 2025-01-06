@@ -22,7 +22,7 @@ const Header = () => {
         <div className="nav-content">
           <div className="nav-bar-mobile-logo-container">
             <Link to="/" className="nav-link-about">
-              Learn<span style={{color: '#0f1635'}}>TECH</span>
+              Learn<span style={{color: '#0f1635'}}>HUB</span>
             </Link>
 
             <button
@@ -36,7 +36,7 @@ const Header = () => {
 
           <div className="nav-bar-large-container">
             <Link to="/" className="nav-link-about">
-              Learn<span style={{color: '#0f1635'}}>TECH</span>
+              Learn<span style={{color: '#0f1635'}}>HUB</span>
             </Link>
             <ul className="nav-menu">
               <li className="nav-menu-item">

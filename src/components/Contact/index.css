@@ -1,9 +1,170 @@
 .contact-main-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
   font-family: 'Roboto';
   color: #0f1635;
+  padding: 20px;
+  background-image: linear-gradient(
+    to left,
+    rgba(225, 94, 94, 0),
+    rgb(226, 222, 222)
+  );
+  padding: 60px 0px 40px 0px;
+}
+
+.contact-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0px;
+  font-family: monospace;
+}
+
+.contact-p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.help-p {
+  font-size: 34px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.mail-logo {
+  margin-right: 10px;
+}
+
+.person-details-bg-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4e0e4;
+  width: 800px;
+  padding: 70px 0px 40px 0px;
+  margin-bottom: 40px;
+}
+
+.p-d-input {
+  border: 0;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border-radius: 8px;
+  color: #475569;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.msq-input-div {
+  display: flex;
+  align-items: flex-start;
+  width: 680px;
+}
+
+.msg {
+  width: 670px;
+  height: 240px;
+}
+
+.contact-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-btn {
+  color: #0a2442;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #0a2442;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+  margin-top: 10px;
+}
+
+.error-msg {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e73c2f;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main-div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-h {
+    font-size: 20px;
+  }
+
+  .help-p {
+    font-size: 24px;
+  }
+
+  .contact-p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .person-details-bg-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    background-color: transparent;
+  }
+
+  .contact-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .p-d-input {
+    width: 240px;
+    font-size: 15px;
+    border: 1px solid #475569;
+  }
+
+  .msq-input-div {
+    width: 280px;
+  }
+  .msg {
+    width: 240px;
+    height: 200px;
+  }
+  .contact-btn {
+    font-size: 18px;
+    margin-top: 10px;
+    border-color: #0a2442;
+    color: #0a2442;
+  }
 }

@@ -18,7 +18,7 @@ const Home = () => (
 
       <div>
         <p className="home-p">
-          Learn<span style={{color: '#0f1635'}}>TECH</span>
+          Learn<span style={{color: '#0f1635'}}>HUB</span>
         </p>
         <h1 className="home-h1">
           Courses To Grow Your Income, Wealth, & Finance Confidence

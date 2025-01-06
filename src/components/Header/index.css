@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  width: 200px;
   color: #ee6e19;
   cursor: pointer;
   list-style-type: none;

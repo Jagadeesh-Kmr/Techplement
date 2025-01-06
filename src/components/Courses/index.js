@@ -1,12 +1,12 @@
+import {Link} from 'react-router-dom'
+
 import Header from '../Header'
 
 import './index.css'
 
-const Courses = () => (
-  <>
-    <Header />
-    <div className="courses-main-div">
-      <h1 className="courses-h1">Our Courses</h1>
+const Courses = () => {
+  const renderFullStackCourseDetails = () => (
+    <>
       <p className="courses-p">Full Stack Course</p>
       <ul className="courses-ul">
         <li className="courses-li">
@@ -51,21 +51,7 @@ const Courses = () => (
             application in React JS, from scratch.
           </p>
         </li>
-        <li className="courses-li">
-          <img
-            src="https://oneandallservices.com/images/Dynamic-Website.jpg"
-            alt="course"
-            className="courses-img"
-          />
-          <p className="courses-name">Python</p>
-          <p className="courses-detail">
-            Learning to code is useful no matter what your career ambitions are.
-            In this course, we demystify programming. You will learn the
-            fundamental concepts of programming, learn to write code in Python
-            and solve the challenging coding questions for practice along the
-            way.
-          </p>
-        </li>
+
         <li className="courses-li">
           <img
             src="https://oneandallservices.com/images/Dynamic-Website.jpg"
@@ -109,8 +95,91 @@ const Courses = () => (
           </p>
         </li>
       </ul>
-    </div>
-  </>
-)
+    </>
+  )
+
+  const renderProgrammingCourseDetails = () => (
+    <>
+      <p className="courses-p">Programming Course</p>
+      <ul className="courses-ul">
+        <li className="courses-li">
+          <img
+            src="https://oneandallservices.com/images/Dynamic-Website.jpg"
+            alt="course"
+            className="courses-img"
+          />
+          <p className="courses-name">Java Fundamentals</p>
+          <p className="courses-detail">
+            In this course, you will learn you will learn the fundamental
+            concepts of Java. This course covers various aspects of Java.On
+            completing this course you will be comfortable in creating your own
+            programs using Java. Java provides a solid foundation to bring your
+            ideas to life.
+          </p>
+        </li>
+        <li className="courses-li">
+          <img
+            src="https://oneandallservices.com/images/Dynamic-Website.jpg"
+            alt="course"
+            className="courses-img"
+          />
+          <p className="courses-name">Spring Boot Tutorial</p>
+          <p className="courses-detail">
+            In this course, you will learn concepts Spring Boot. Spring Boot is
+            a Java framework that makes it easier to create and run Java
+            applications. It simplifies the configuration and setup process,
+            allowing developers to focus more on writing code for their
+            applications.
+          </p>
+        </li>
+        <li className="courses-li">
+          <img
+            src="https://oneandallservices.com/images/Dynamic-Website.jpg"
+            alt="course"
+            className="courses-img"
+          />
+          <p className="courses-name">Problem Solving Pattern</p>
+          <p className="courses-detail">
+            A resource that provides tips for mastering problem solving,
+            including breaking problems into smaller sub-problems, practicing
+            communicating your thought process, and participating in coding
+            challenges.
+          </p>
+        </li>
+        <li className="courses-li">
+          <img
+            src="https://oneandallservices.com/images/Dynamic-Website.jpg"
+            alt="course"
+            className="courses-img"
+          />
+          <p className="courses-name">Python</p>
+          <p className="courses-detail">
+            Learning to code is useful no matter what your career ambitions are.
+            In this course, we demystify programming. You will learn the
+            fundamental concepts of programming, learn to write code in Python
+            and solve the challenging coding questions for practice along the
+            way.
+          </p>
+        </li>
+      </ul>
+    </>
+  )
+
+  return (
+    <>
+      <Header />
+      <div className="courses-main-div">
+        <h1 className="courses-h1">Our Courses</h1>
+        {renderFullStackCourseDetails()}
+        {renderProgrammingCourseDetails()}
+        <Link to="/contact" className="link">
+          <button type="button" className="contact-btn">
+            CONTACT
+          </button>
+        </Link>
+      </div>
+    </>
+  )
+}
 
 export default Courses
