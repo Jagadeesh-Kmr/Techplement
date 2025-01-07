@@ -1,6 +1,6 @@
 # Project-Details
 
-Constructed an all-in-one online course selling website, Learnhub App.
+Constructed an all-in-one Online Course Selling website, Learnhub App.
 
 ● Built pages for Home, courses and Contact with React components, form inputs, and event handlers.
 
@@ -20,5 +20,6 @@ Technologies used: React JS, JS, CSS, Bootstrap, Routing, React hooks.
     - After clicking "Contact" button page will navigate to Contact page.
          
 - Contact Route
+   - Created a simple, sleek form for easy outreach.
 
 
